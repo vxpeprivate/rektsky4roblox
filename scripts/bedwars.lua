@@ -1,6 +1,6 @@
 repeat task.wait() until game:IsLoaded()
 
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/NewRektskyUiLib.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/NewRektskyUiLib.lua"))()
 
 local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua", true))()
 
@@ -8,7 +8,7 @@ local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7Grand
 local whiteliststhing = {}
 
 pcall(function()
-    whiteliststhing = loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/whitelist.lua"))()
+    whiteliststhing = loadstring(game:HttpGet("https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/whitelist.lua"))()
 end)
 
 do
@@ -274,7 +274,7 @@ end
 
 local isclone = false
 
---[[function kickKillauraRemote()
+function kickKillauraRemote()
     if (not isclone) then
         local mouse = game.Players.LocalPlayer:GetMouse()
         for i,v in pairs(game.Players:GetChildren()) do
@@ -545,7 +545,7 @@ do
 end
 
 
---[[local conectionkillauraV2
+local conectionkillauraV2
 Tabs["Combat"]:CreateToggle({
     ["Name"] = "KillAuraV2",
     ["Keybind"] = nil,
@@ -600,7 +600,7 @@ Tabs["Combat"]:CreateToggle({
     end
 })--]]
 
---[[local TPAURAFUNIv2
+local TPAURAFUNIv2
 local tpaurafunihaha
 tpaurafunihaha = Tabs["Combat"]:CreateToggle({
     ["Name"] = "TPAura",
@@ -656,7 +656,7 @@ tpaurafunihaha = Tabs["Combat"]:CreateToggle({
     end
 })--]]
 
---[[ 
+
 local ShieldRemote = getremote(debug.getconstants(debug.getprotos(getmetatable(KnitClient.Controllers.ShieldController).raiseShield)[1]))
 local connectionkaurablock
 Tabs["Combat"]:CreateToggle({
@@ -1140,7 +1140,6 @@ end
     })
 ]]
 
---[[
     local cloneval = false
     local funiclonegodmodedisab
     funiclonegodmodedisab = Tabs["Movement"]:CreateToggle({
@@ -1172,7 +1171,7 @@ end
     })
 --]]
 
---[[
+
     longjumpfuni = Tabs["Movement"]:CreateToggle({
         ["Name"] = "CannonLongJump",
         ["Keybind"] = nil,
@@ -1321,7 +1320,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("rektsky/sound/mc", "sound/mc"),
+            Url = "https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/"..path:gsub("rektsky/sound/mc", "sound/mc"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -1350,7 +1349,7 @@ local function getcustomassetthingylol(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/"..path:gsub("rektsky/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/"..path:gsub("rektsky/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -2011,7 +2010,7 @@ Tabs["Exploits"]:CreateToggle({
     end
 })
 
---[[local breakallbedsthing
+local breakallbedsthing
 breakallbedsthing = Tabs["Exploits"]:CreateToggle({
     ["Name"] = "BreakAllBeds",
     ["Keybind"] = nil,
