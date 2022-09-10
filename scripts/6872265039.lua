@@ -13,7 +13,7 @@ gmt.__namecall = newcclosure(
     return old(self, ...)
 end)
 
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/8pmX8/rektsky4roblox/main/NewRektskyUiLib.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/NewRektskyUiLib.lua"))()
 
 local spawn = function(func) 
     return coroutine.wrap(func)()
