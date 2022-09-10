@@ -1,4 +1,4 @@
-repeat task.wait() until game:IsLoaded()
+\repeat task.wait() until game:IsLoaded()
 
 local lib = {
     ["Rainbow"] = false,
@@ -126,7 +126,7 @@ local function getcustomassetfunc(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/vxpeprivate2/rektsky4roblox/main/"..path:gsub("rektsky/assets", "assets"),
+            Url = "https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/"..path:gsub("rektsky/assets", "assets"),
             Method = "GET"
         })
         writefile(path, req.Body)
@@ -155,7 +155,7 @@ local function getcustomassetfuncforsounds(path)
             textlabel:Remove()
         end)
         local req = requestfunc({
-            Url = "https://raw.githubusercontent.com/vxpeprivate2/rektsky4roblox/main/"..path:gsub("rektsky/sound", "sound"),
+            Url = "https://raw.githubusercontent.com/vxpeprivate/rektsky4roblox/main/"..path:gsub("rektsky/sound", "sound"),
             Method = "GET"
         })
         writefile(path, req.Body)
